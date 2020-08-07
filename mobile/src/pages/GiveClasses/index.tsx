@@ -1,5 +1,5 @@
 import React from "react"
-import { Container } from "../../styles/globalStyles"
+import { BlueContainer } from "../../styles/globalStyles"
 import {
   ImgBackground,
   Title,
@@ -18,7 +18,7 @@ export default function GiveClasses() {
   }
 
   return (
-    <Container>
+    <BlueContainer>
       <ImgBackground source={giveClassesBGImg} resizeMode="contain">
         <Title>Quer ser um proffy?</Title>
         <Description>
@@ -29,6 +29,6 @@ export default function GiveClasses() {
       <OkButton onPress={handleNavigateBack}>
         <OkButtonText>Tudo bem</OkButtonText>
       </OkButton>
-    </Container>
+    </BlueContainer>
   )
 }

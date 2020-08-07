@@ -12,7 +12,7 @@ import landingImg from "../../assets/images/landing.png"
 import studyIcon from "../../assets/images/icons/study.png"
 import giveClassesIcon from "../../assets/images/icons/give-classes.png"
 import heartIcon from "../../assets/images/icons/heart.png"
-import { Bold, Container } from "../../styles/globalStyles"
+import { Bold, BlueContainer } from "../../styles/globalStyles"
 import { Image } from "react-native"
 import { useNavigation } from "@react-navigation/native"
 
@@ -28,7 +28,7 @@ export default function Landing() {
   }
 
   return (
-    <Container>
+    <BlueContainer>
       <Banner source={landingImg} resizeMode="contain" />
       <Title>
         Seja bem-vindo, {"\n"}
@@ -50,6 +50,6 @@ export default function Landing() {
       <TotalConnections>
         Total de 285 conexões já realizadas <Image source={heartIcon} />
       </TotalConnections>
-    </Container>
+    </BlueContainer>
   )
 }

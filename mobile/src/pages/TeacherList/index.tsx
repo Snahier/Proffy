@@ -1,6 +1,7 @@
 import React from "react"
 import { View } from "react-native"
+import { Container } from "./styles"
 
 export default function TeacherList() {
-  return <View></View>
+  return <Container></Container>
 }

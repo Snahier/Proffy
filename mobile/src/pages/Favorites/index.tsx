@@ -1,6 +1,6 @@
 import React from "react"
-import { View } from "react-native"
+import { LightContainer } from "../../styles/globalStyles"
 
 export default function Favorites() {
-  return <View></View>
+  return <LightContainer></LightContainer>
 }
