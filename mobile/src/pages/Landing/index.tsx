@@ -15,8 +15,15 @@ import giveClassesIcon from "../../assets/images/icons/give-classes.png"
 import heartIcon from "../../assets/images/icons/heart.png"
 import { Bold } from "../../styles/globalStyles"
 import { Image } from "react-native"
+import { useNavigation } from "@react-navigation/native"
 
 export default function Landing() {
+  const { navigate } = useNavigation()
+
+  function handleNavigateToGiveClassesPage() {
+    navigate("GiveClasses")
+  }
+
   return (
     <Container>
       <Banner source={landingImg} resizeMode="contain" />
@@ -31,7 +38,7 @@ export default function Landing() {
           <ButtonText>Estudar</ButtonText>
         </ButtonPrimary>
 
-        <ButtonSecondary>
+        <ButtonSecondary onPress={handleNavigateToGiveClassesPage}>
           <Image source={giveClassesIcon} />
           <ButtonText>Dar aulas</ButtonText>
         </ButtonSecondary>
