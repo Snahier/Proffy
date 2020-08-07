@@ -16,4 +16,5 @@ export const Title = styled.Text`
   font-size: 20px;
   line-height: 30px;
   margin-top: 80px;
+  font-family: "Poppins_400Regular";
 `
