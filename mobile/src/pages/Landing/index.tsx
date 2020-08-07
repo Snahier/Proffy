@@ -1,12 +1,16 @@
 import React from "react"
-import { Container } from "./styles"
-import { Image } from "react-native"
+import { Container, Banner, Title } from "./styles"
 import landingImg from "../../assets/images/landing.png"
+import { Bold } from "../../styles/globalStyles"
 
 export default function Landing() {
   return (
     <Container>
-      <Image source={landingImg} />
+      <Banner source={landingImg} resizeMode="contain" />
+      <Title>
+        Seja bem-vindo, {"\n"}
+        <Bold>O que deseja fazer?</Bold>
+      </Title>
     </Container>
   )
 }
