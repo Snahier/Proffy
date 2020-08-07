@@ -23,6 +23,10 @@ export default function Landing() {
     navigate("GiveClasses")
   }
 
+  function handleNavigateToStudyPages() {
+    navigate("Study")
+  }
+
   return (
     <Container>
       <Banner source={landingImg} resizeMode="contain" />
@@ -32,7 +36,7 @@ export default function Landing() {
       </Title>
 
       <ButtonsContainer>
-        <ButtonPrimary>
+        <ButtonPrimary onPress={handleNavigateToStudyPages}>
           <Image source={studyIcon} />
           <ButtonText>Estudar</ButtonText>
         </ButtonPrimary>
