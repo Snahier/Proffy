@@ -1,7 +1,20 @@
 import React from "react"
-import { Container, Banner, Title } from "./styles"
+import {
+  Container,
+  Banner,
+  Title,
+  ButtonsContainer,
+  ButtonPrimary,
+  ButtonSecondary,
+  ButtonText,
+  TotalConnections,
+} from "./styles"
 import landingImg from "../../assets/images/landing.png"
+import studyIcon from "../../assets/images/icons/study.png"
+import giveClassesIcon from "../../assets/images/icons/give-classes.png"
+import heartIcon from "../../assets/images/icons/heart.png"
 import { Bold } from "../../styles/globalStyles"
+import { Image } from "react-native"
 
 export default function Landing() {
   return (
@@ -11,6 +24,22 @@ export default function Landing() {
         Seja bem-vindo, {"\n"}
         <Bold>O que deseja fazer?</Bold>
       </Title>
+
+      <ButtonsContainer>
+        <ButtonPrimary>
+          <Image source={studyIcon} />
+          <ButtonText>Estudar</ButtonText>
+        </ButtonPrimary>
+
+        <ButtonSecondary>
+          <Image source={giveClassesIcon} />
+          <ButtonText>Dar aulas</ButtonText>
+        </ButtonSecondary>
+      </ButtonsContainer>
+
+      <TotalConnections>
+        Total de 285 conexões já realizadas <Image source={heartIcon} />
+      </TotalConnections>
     </Container>
   )
 }
